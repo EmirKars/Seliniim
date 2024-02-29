@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aşkım İçin Özel Site</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f17575;
+    position: relative;
+  }
+  header {
+    background-color: #f083e1;
+    color: #fff;
+    padding: 2px;
+    text-align: center;
+  }
+  main {
+    padding: 0px;
+    position: relative;
+  }
+  .text {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .text p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .images {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+  }
+  .images img {
+    max-width: 30%;
+    height: 200px;
+    width:   200px;
+    margin: 10 10px;
+    position: bottom;
+  }
+  .months {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .month-button {
+    background-color: #fff;
+    border: 2px solid #333;
+    color: #333;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+  }
+  .popup img {
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Aşkım Bebeğim Selinimin Doğum Günü Kutlu Olsun!</h1>
+</header>
+
+<main>
+    <div class="text">
+        <h2>Aşkım için özel olarak hazırlanmış bir site.</h2>
+        <h2>Birlikte paylaştığımız güzel anılardan bazıları burada.</h2>
+      </div>
+      </div>
+  <div class="months">
+    <button class="month-button" onclick="togglePopup('haziran2023Popup')">Haziran 2023</button>
+    <button class="month-button" onclick="togglePopup('temmuz2023Popup')">Temmuz 2023</button>
+    <button class="month-button" onclick="togglePopup('agustos2023Popup')">Ağustos 2023</button>
+    <button class="month-button" onclick="togglePopup('eylul2023Popup')">Eylül 2023</button>
+    <button class="month-button" onclick="togglePopup('ekim2023Popup')">Ekim 2023</button>
+    <button class="month-button" onclick="togglePopup('kasim2023Popup')">Kasım 2023</button>
+    <button class="month-button" onclick="togglePopup('aralik2023Popup')">Aralık 2023</button>
+    <button class="month-button" onclick="togglePopup('ocak2024Popup')">Ocak 2024</button>
+    <button class="month-button" onclick="togglePopup('subat2024Popup')">Şubat 2024</button>
+  </div>
+  <div class="text">
+    <p>Sevgili Selin.</p>
+    <p>Selinim seni çok seviyorum. İyi ki hayatıma girdin iyi ki varsın iyi ki doğdun. Sana hediye olarak bu şekilde bi anı sitesi hazırlamak istedim. Umarım beğenirsin. Birlikte yaşadığımız her anıyı sığdırmaya kalksaydım bu sitenin bi sonu gelmezdi çünkü geçirdiğimiz her dakika benim için çok değerli bir anı. Benim aklımda yer etmiş birlikte olduğumuz anıları birleştirdim ve ortaya böyle bir şey çıktı. Umarım beğenirsin </p>
+
+    <p>Sana aşık olan çocuk</p>
+    <p> mucuk</p>
+    
+    <div class="images">
+      <img src="resimler/da9e1cb431aed6e2de2b32e5ded8ce1f.jpg" alt="Resim 1">
+      <img src="resimler/maxresdefault.jpg" alt="Resim 1">
+      
+    
+</main>
+
+<!-- Haziran 2023 Popup -->
+<div id="haziran2023Popup" class="popup">
+  <h2>15 Haziran 2023</h2>
+  <img src="resimler/cızım.jpg" width="2500px" >
+  <p>Her şeyi başlatan o fotoğraf. İnstagramdan çizimlerini bana atmıştın </p>
+  <button onclick="closePopup('haziran2023Popup')">Kapat</button>
+</div>
+
+<!-- Temmuz 2023 Popup -->
+<div id="temmuz2023Popup" class="popup">
+  <h2>10 Temmuz 2023</h2>
+  <p>İlk buluşmamız. Fotoğraf çekilmemiştik ama son dakika sana bağırıp fotoğrafını çekmiştim</p>
+  <!-- Örnek resimler -->
+  <img src="resimler/ontemmuz.jpg" alt="Temmuz 2023 Anısı 1" width="1000pxpx">
+  <p>İlk buluşmamız inanılmazdı. Beni 20 dakika bekletmen, seni otosbüsün içinde keskin nişancı gibi görmem, elini bir anda tutmam,. Buluşmadan önce sallanmak istediğini söylemiştin bende seni şairler parkına götürmüştüm ve sallamıştım sonra kafanı öpmüştüm sonra parktaki çocuk beni eve atmaya çalışıyordu diğeri de seni annesi zannetmişti. İlginç bir gündü ama sana fena aşık olmuştum. (FENAAA) Ellerimiz terliyordu sürekli :D ama bırakmıyordum elini. </p>
+  <button onclick="closePopup('temmuz2023Popup')">Kapat</button>
+</div>
+
+<!-- Ağustos 2023 Popup -->
+<div id="agustos2023Popup" class="popup">
+  <h2>Ağustos 2023 Anılarımız</h2>
+  <img src="resimler/agustos.jpg" alt="Ağustos 2023 Anısı 1">
+  <img src="resimler/agustos2.jpg" alt="Ağustos 2023 Anısı 2">
+  <img src="resimler/agustos3.jpg" alt="Ağustos 2023 Anısı 2">
+  <p>ilk kez maçka parkına gitmiştik artık 2 haftada bir buluşmak kesmiyordu buluşmaları haftada bir yapmaya başladık. Piknik yapmıştık sen bana poğaça ve vişne reçeli yapıp vermiştin çoook beğenmiştim. (reçeli3gündeyedim) ve bugün ilk kez dudisten öpüşmüştük</p>
+  <button onclick="closePopup('agustos2023Popup')">Kapat</button>
+</div>
+
+<!-- Eylül 2023 Popup -->
+<div id="eylul2023Popup" class="popup">
+  <h2>21 Eylül 2023</h2>
+  <p>Bugün aşırı heyecanlıydım çünkü bize geliyordun</p>
+  <img src="resimler/21 eylül.jpg" alt="Eylül 2023 Anısı 1">
+  <img src="resimler/22 eylül.jpg" alt="Eylül 2023 Anısı 2">
+  <img src="resimler/22 eylüllll.jpg" alt="Eylül 2023 Anısı 2">
+  <p>Çok heyecanlıydım bir gün öncesinden marketten kahvaltılık almıştım güzel bir kahvaltı hazırlamak için çok güzel olmamıştı ama işte o kadar yapabildim. "Ben yıkarım yaaa" diyip tuvalete kaçmıştım sonra geldiğimde sen çoktan bitirmek üzereydin bulaşıkları ve sana arkandan muzurluklar yapıyordum. Seninle ilk kez yattığımda o kadar huzurluydu ki sanki yıllardır yatıyo gibiydik sonra biraz ayıplı seyler yaptık (öpüstükçokfenaaa) ve sana oyun oynattım oyundan pek mutlu olmadın ama hoşuna gitmişti eminim.</p>
+  <button onclick="closePopup('eylul2023Popup')">Kapat</button>
+</div>
+
+<!-- Ekim 2023 Popup -->
+<div id="ekim2023Popup" class="popup">
+  <h2>13 Ekim 2023</h2>
+  <p>Çok güzel zamanlar...</p>
+  <img src="resimler/6 ekimmmm.jpg" alt="Ekim 2023 Anısı 1">
+  <img src="resimler/6 ekimmmmmmmmm.jpg" alt="Ekim 2023 Anısı 2">
+  <img src="resimler/6 ekkim.jpg" alt="Ekim 2023 Anısı 2">
+  <p>Ahh... Sanırım en en en en sevdiğim zamandı. Bugün o kadar eğlenmiştik ki saat 5'de evden çıkman gerekiyordu ama birbirimizi bırakamamıştık ve bir yarım saat daha birlikte olmuştuk (ayıplısapıkseyler) bize geldiğin o kadar zamanda en en keyif aldığım bu olmuştu. Sabah yediğimiz kol böreği o kadar lezzetli gelmişti ki çünkü seninle yiyordum bebek kokulum benim oyyyy götünü yediğim. Pardon fotoğraflara bakarken kendimi kaptırdım.</p>
+  <button onclick="closePopup('ekim2023Popup')">Kapat</button>
+</div>
+
+<!-- Kasım 2023 Popup -->
+<div id="kasim2023Popup" class="popup">
+  <h2>17 Kasım 2023</h2>
+  <img src="resimler/kasım.jpg" alt="Kasım 2023 Anısı 1">
+  <img src="resimler/kasıım.jpg" alt="Kasım 2023 Anısı 2">
+  <img src="resimler/kkasım.jpg" alt="Kasım 2023 Anısı 2">
+  <p>Bugün annemler döndüğü için aylar sonra ilk kez dışarda buluşmuştuk. Her evde buluştuğumuzda "dışarda buluşmayı unuttuk yaa keşke çıksak" diyorduk taaaki gerçekten çıkana kadar. Beşiktaş'a gitmiştik ve orda obez kediyi görmüştük (öldühuzuriçindeyatobezkedi) onu görmeden önce tokalardan görmüştün ve ben de direk sana almıştım çooook yakışmıştı sana fena güzel olmuştun. </p>
+  <button onclick="closePopup('kasim2023Popup')">Kapat</button>
+</div>
+
+<!-- Aralık 2023 Popup -->
+<div id="aralik2023Popup" class="popup">
+  <h2>29 Aralık 2023</h2>
+  <img src="resimler/aralık.jpg" alt="Aralık 2023 Anısı 1">
+  <img src="resimler/aralıkkk.jpg" alt="Aralık 2023 Anısı 2">
+  <img src="resimler/aralıık.jpg" alt="Aralık 2023 Anısı 1">
+  <p>Bugün çok güzeldi. Üsküdardan çengelköye gitmiştik ordan 700 800 kilometre yayan yürümüştük veee otobüsle geri dönmüştük. Gördüğün her kediyi sevdiğin gibi burada da bulmuşltun bi tane çirkin goblin ve hemen kucağına atlamıştı tabi. İlk kez birlikte otobüse binmiştik. Kadıköyde buluştuğumuzda da hava çok soğuktu ama dehşet bende kar maskesi almıştım sonra fena bi fotoğraf çekilmiştik</p>
+  <button onclick="closePopup('aralik2023Popup')">Kapat</button>
+</div>
+
+<!-- Ocak 2024 Popup -->
+<div id="ocak2024Popup" class="popup">
+  <h2>20 Ocak 2024</h2>
+  <img src="resimler/ocak.jpg" alt="Ocak 2024 Anısı 1">
+  <img src="resimler/ocakk.jpg" alt="Ocak 2024 Anısı 2">
+  <p>Kadıköye gitmiştik. Tabi o kara gün (2.buluşmamızdadonumuzakadarıslanmamız) sanırım biz lanetlendik ve ne zaman kadıköye gitsek yağmur yağıyor. Bugün de farksızdı dehşet bi yağmur yağıyordu tek farkı biz bir yerde oturmak yerine "yürüsek ne güzel olur yaaaa" diyip yürümüştük ve harbiden de çok keyifli olmuştu mükemmeldi.(şuantelefondaseninlekonusuyorumsanaödevyaptığımısöyledimamaaslındabunuyapıyorumbebeğim)</p>
+  <button onclick="closePopup('ocak2024Popup')">Kapat</button>
+</div>
+
+<!-- Şubat 2024 Popup -->
+<div id="subat2024Popup" class="popup">
+  <h2>3 Şubat 2024</h2>
+  <p>Hayatımda aldığım en iyi doğum günü hediyesini aldığım doğum günüm</p>
+  <img src="resimler/subaat.jpg" alt="Şubat 2024 Anısı 1">
+  <img src="resimler/subat.jpg" alt="Şubat 2024 Anısı 2">
+  <img src="resimler/subatt.jpg" alt="Şubat 2024 Anısı 2">
+  <img src="resimler/subatttt.jpg" alt="Şubat 2024 Anısı 2">
+  <p>Sınavlarım olduğu için yaklaşık bir ay buluşamamıştık ve o kadar çok özlemiştim ki seni OOOOOOOO yani. Sınavlarım biter bitmez buluşmuştuk sürekli bana "hiçbir şey yapmıyorum oturuyorum" diyordun meğersem bana atkı örüyormuşsun. Dötünü yediğim bal yanaklı bebeğim benim.</p>
+  <button onclick="closePopup('subat2024Popup')">Kapat</button>
+</div>
+
+<!-- jQuery ve jQuery UI kütüphaneleri -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $(".popup").draggable({
+      touch: true // Dokunmatik desteği etkinleştir
+    });
+  });
+
+  function togglePopup(popupId) {
+    closeAllPopups();
+    var popup = document.getElementById(popupId);
+    if (popup) {
+      popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
+      // Pop-up'ı ortala
+      var windowWidth = $(window).width();
+      var windowHeight = $(window).height();
+      var popupWidth = $(popup).width();
+      var popupHeight = $(popup).height();
+      $(popup).css({
+        top: (windowHeight - popupHeight) / 2,
+        left: (windowWidth - popupWidth) / 2
+      });
+    }
+  }
+
+  function closeAllPopups() {
+    var popups = document.querySelectorAll('.popup');
+    popups.forEach(function(popup) {
+      popup.style.display = 'none';
+    });
+  }
+
+  function closePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    if (popup) {
+      popup.style.display = 'none';
+    }
+  }
+</script>
+
+</body>
+</html>
